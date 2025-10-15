@@ -24,14 +24,6 @@ log_error() {
     echo -e "${RED}[ERROR]${NC} $1"
 }
 
-# 检查是否为 root 用户
-check_root() {
-    if [[ $EUID -eq 0 ]]; then
-        log_error "请不要使用 root 用户运行此脚本"
-        exit 1
-    fi
-}
-
 # 检查系统
 check_system() {
     log_info "检查系统环境..."
