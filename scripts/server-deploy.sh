@@ -12,7 +12,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # 配置变量
-IMAGE_NAME="${IMAGE_NAME:-ghcr.io/your-username/rclone-web-gui}"
+IMAGE_NAME="${IMAGE_NAME:-ghcr.io/iwvw/rclone-web-gui}"
 TAG="${TAG:-latest}"
 CONTAINER_NAME="rclone-web-gui"
 PORT="${PORT:-3000}"
